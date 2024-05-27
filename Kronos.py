@@ -71,7 +71,7 @@ def test(update, context):
 
 def delete(context, job):
     wait_dict.pop(job.context)
-    context.bot.sendMessage(chat_id=-1001207423305, text="Rimosso dalla coda con successo")
+    context.bot.sendMessage(chat_id=0, text="Rimosso dalla coda con successo")
 
 def trywait(update, context):
     context.bot.sendMessage(chat_id=update.message.chat_id, text="Hey! Non c'è nessuno? Se usi il comando /wait ("
